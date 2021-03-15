@@ -20,6 +20,21 @@ export const ButtonLogin = styled.TouchableOpacity`
   width: 308px;
   height: 53px;
   flex-direction: row;
+  max-height: 100px;
+  left: 65px;
+  border-radius: 8;
+  align-items: center;
+  justify-content: center;
+  background-color:#723D2B;
+  top:230px;
+  
+`;
+
+export const ButtonGmail = styled.TouchableOpacity`
+
+  width: 308px;
+  height: 53px;
+  flex-direction: row;
   position: relative;
   max-height: 100px;
   left: 65px;
@@ -27,8 +42,10 @@ export const ButtonLogin = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   background-color:#723D2B;
+  top:120px;
   
 `;
+
 
 export const ButtonText = styled.Text`
 font-size: 20px;
