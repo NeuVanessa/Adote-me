@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { View, Text, TouchableOpacity, TextInput, StyleSheet } from 'react-native'
-import {SimpleInput,Input, ButtonLogin} from './styles';
+import {SimpleInput,Input, ButtonLogin,ButtonText} from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome';
 class Inputs extends Component {
 
@@ -28,7 +28,7 @@ class Inputs extends Component {
                onPress = {
                   () => this.login(this.state.email, this.state.password)
                }>
-                <Text color="#FFF">Logar</Text>
+                <ButtonText color="#fff">Logar</ButtonText>
             </ButtonLogin>
             {/* <TouchableOpacity
                style = {styles.submitButton}

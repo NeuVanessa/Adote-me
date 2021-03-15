@@ -22,11 +22,16 @@ export const ButtonLogin = styled.TouchableOpacity`
   flex-direction: row;
   position: relative;
   max-height: 100px;
-  left: 50px;
+  left: 65px;
   border-radius: 8;
   align-items: center;
   justify-content: center;
-  color: ${props => props.color};
   background-color:#723D2B;
   
+`;
+
+export const ButtonText = styled.Text`
+font-size: 20px;
+color: ${props => props.color};
+font-style:  italic;
 `;
