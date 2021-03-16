@@ -1,22 +1,27 @@
-//Para utilizar o react-navigation primeiro chamei o create app responsável por ficar em volta na verdade é o container de fora que receberá outro dentro.
-import { createAppContainer, createSwitchNavigator } from "react-navigation";
+
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
 
 //Aqui é importado todas as rotas de navegação necessária, nesse código apenas chamei uma tela
-
 import Login from "../pages/Login/index";
 import Home from "../pages/Home/index";
-// aqui foi criado a constante Routes no createSwitchNavigator eu iniciei minha primeira rota que é a Initial
-const Routes = createAppContainer(
-  createSwitchNavigator({
-    // Primeira rota definida no projeto, essa rota é a primeira visualizada pelo usuário do aplicativo.
-    Inicio: {
-      screen: Login,
-    },
-    Entrada: {
-      screen: Home,
-    },
-  })
-);
 
-//Aqui só foi exportado
-export default Routes;
+const Stack = createStackNavigator();
+
+//serve para ocultar o header que aparece automático quando cria uma rota
+//headerShown
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          options={{ headerShown: false }}
+          name="Login"
+          component={Login}
+        />
+        <Stack.Screen name="Home" component={Home} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}

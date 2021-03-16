@@ -1,11 +1,5 @@
-import React, { Component,useState } from "react";
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  TextInput,
-  StyleSheet,
-} from "react-native";
+import React  from "react";
+
 import { Value } from "react-native-reanimated";
 import {
   SimpleInput,
@@ -21,12 +15,14 @@ import { useNavigation } from "@react-navigation/native";
 
 export default function Login() {
   const navigation = useNavigation();
-  const [username, setUsername] = useState(null)
-  const [Password, setPassord] = useState(null)
+
+  //trecho de código abaixo é responsavel para fazer login, quando tiver que pegar os dados do back
+  //const [username, setUsername] = useState(null)
+  //const [Password, setPassord] = useState(null)
   
   const acessoHome = () => {
 
-    console.log("Acessou o home")
+    navigation.navigate('Home')
   }
  
   return (
