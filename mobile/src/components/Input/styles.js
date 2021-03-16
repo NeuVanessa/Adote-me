@@ -56,8 +56,17 @@ export const ButonRegister = styled.TouchableOpacity`
   top: 95px;
 `;
 
+
+
 export const ButtonText = styled.Text`
   font-size: 20px;
+  color: ${(props) => props.color};
+  font-style: italic;
+`;
+export const TextFooter = styled.Text`
+  font-size: 20px;
+  top:300px;
+  text-align:center;
   color: ${(props) => props.color};
   font-style: italic;
 `;

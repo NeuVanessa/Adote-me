@@ -13,6 +13,7 @@ import {
   ButtonText,
   ButtonGmail,
   ButonRegister,
+  TextFooter,
 } from "./styles";
 
 import Icon from "react-native-vector-icons/FontAwesome";
@@ -52,7 +53,7 @@ class Inputs extends Component {
           <ButtonText color="#fff">Cadastrar</ButtonText>
         </ButonRegister>
 
-        {/* <Icon name='heart' size={30} color='white'/> */}
+        <TextFooter color="#fff">Copyright © 2021 Equipe Adote-me.</TextFooter>
       </SimpleInput>
     );
   }
