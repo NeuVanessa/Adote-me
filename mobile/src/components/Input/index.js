@@ -6,7 +6,8 @@ import {
   TextInput,
   StyleSheet,
 } from "react-native";
-import { SimpleInput, Input, ButtonLogin, ButtonText,ButtonGmail } from "./styles";
+import { SimpleInput, Input, ButtonLogin, ButtonText,ButtonGmail,ButonRegister } from "./styles";
+
 import Icon from "react-native-vector-icons/FontAwesome";
 class Inputs extends Component {
   render() {
@@ -40,13 +41,15 @@ class Inputs extends Component {
             
           <ButtonText color="#fff">Continue with Google</ButtonText>
         </ButtonGmail>
-        {/* <TouchableOpacity
+        
+          {/* <Icon name='heart' size={30} color='white'/> */}
+        <ButonRegister
                style = {styles.submitButton}
                onPress = {
                   () => this.login(this.state.email, this.state.password)
                }>
                <Text style = {styles.submitButtonText}> Submit </Text>
-            </TouchableOpacity> */}
+            </ButonRegister>
       </SimpleInput>
     );
   }

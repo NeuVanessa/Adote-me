@@ -42,9 +42,25 @@ export const ButtonGmail = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   background-color:#723D2B;
-  top:120px;
+  top:80px;
   
 `;
+export const ButonRegister = styled.TouchableOpacity`
+
+  width: 308px;
+  height: 53px;
+  flex-direction: row;
+  position: relative;
+  max-height: 100px;
+  left: 65px;
+  border-radius: 8;
+  align-items: center;
+  justify-content: center;
+  background-color:#723D2B;
+  top:80px;
+  
+`;
+
 
 
 export const ButtonText = styled.Text`
