@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 import {
+  View,
+  Text,
+  TouchableOpacity,
+  TextInput,
+  StyleSheet,
+} from "react-native";
+import {
+
   SimpleInput,
   Input,
   ButtonLogin,
@@ -9,7 +17,11 @@ import {
   TextFooter,
 } from "./styles";
 
+
 //import Icon from "react-native-vector-icons/FontAwesome";
+
+import Icon from "react-native-vector-icons/FontAwesome";
+
 class Inputs extends Component {
   render() {
     return (
