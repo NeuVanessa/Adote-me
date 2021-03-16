@@ -9,7 +9,7 @@ import {
   TextFooter,
 } from "./styles";
 
-import Icon from "react-native-vector-icons/FontAwesome";
+//import Icon from "react-native-vector-icons/FontAwesome";
 class Inputs extends Component {
   render() {
     return (
