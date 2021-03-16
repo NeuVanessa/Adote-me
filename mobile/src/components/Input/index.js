@@ -16,11 +16,11 @@ import {
   ButonRegister,
   TextFooter,
 } from "./styles";
-
+import { useNavigation } from "@react-navigation/native";
 //import Icon from "react-native-vector-icons/FontAwesome";
 
 export default function Login() {
-  
+  const navigation = useNavigation();
   const [username, setUsername] = useState(null)
   const [Password, setPassord] = useState(null)
   
