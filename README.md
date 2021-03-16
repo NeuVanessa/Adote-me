@@ -8,4 +8,9 @@ exemplo: 5-Button-Global
 Depois de fazer todas as alterações solicite um PullRequest, depois de visualizado será aceito ou não, se não for aceito diremos o motivo para que seja arrumado.
 
 
+ASSINE A ISSUE
+Troque o label para DEV, EM ANDAMENTO
+AO FINALIZAR A BRANCH FECHE A ISSUE
+
+
 
