@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component,useState } from "react";
 import {
   View,
   Text,
@@ -6,6 +6,7 @@ import {
   TextInput,
   StyleSheet,
 } from "react-native";
+import { Value } from "react-native-reanimated";
 import {
   SimpleInput,
   Input,
@@ -17,21 +18,29 @@ import {
 } from "./styles";
 
 //import Icon from "react-native-vector-icons/FontAwesome";
-function click() {
-  alert("cliclou");
-}
 
 export default function Login() {
-  //função para teste do botão, criei essa função simples de clique para ver se o botão realmente estava funcionando.
+  
+  const [username, setUsername] = useState(null)
+  const [Password, setPassord] = useState(null)
+  
+  const acessoHome = () => {
 
+    console.log("Acessou o home")
+  }
+ 
   return (
+
+  
     <SimpleInput>
+       
       <Input
         underlineColorAndroid="transparent"
         placeholder="Username"
         placeholderTextColor="#723D2B"
         autoCapitalize="none"
-        onChangeText={this.handleEmail}
+        onChangText={Value => setUsername(Value)}
+      
       />
 
       <Input
@@ -39,24 +48,25 @@ export default function Login() {
         placeholder="Password"
         placeholderTextColor="#723D2B"
         autoCapitalize="none"
-        onChangeText={this.handlePassword}
+        onChangText={Value => setPassord(Value)}
       />
 
-      <ButtonLogin onPress={click}>
+      <ButtonLogin onPress={()=>acessoHome()}>
         <ButtonText color="#fff">Logar</ButtonText>
       </ButtonLogin>
       <ButtonGmail
-        onPress={() => this.login(this.state.email, this.state.password)}
+      
       >
         <ButtonText color="#fff">Continue with Google</ButtonText>
       </ButtonGmail>
       <ButonRegister
-        onPress={() => this.login(this.state.email, this.state.password)}
+    
       >
         <ButtonText color="#fff">Cadastrar</ButtonText>
       </ButonRegister>
 
       <TextFooter color="#fff">Copyright © 2021 Equipe Adote-me.</TextFooter>
+    
     </SimpleInput>
   );
 }
