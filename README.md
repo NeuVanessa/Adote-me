@@ -11,6 +11,7 @@ Depois de fazer todas as alterações solicite um PullRequest, depois de visuali
 ASSINE A ISSUE
 Troque o label para DEV, EM ANDAMENTO
 AO FINALIZAR A BRANCH FECHE A ISSUE
+VEJA exemplo: https://github.com/NeuVanessa/Adote-me/issues?q=is%3Aissue+is%3Aclosed
 
 
 
