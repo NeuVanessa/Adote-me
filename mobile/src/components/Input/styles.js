@@ -7,7 +7,7 @@ export const SimpleInput = styled.View`
 export const Input = styled.TextInput.attrs({
   placeholderTextColor: "rgba(255,0,0)",
 })`
-  width: 439px;
+  
   font-size: 17px;
   margin-bottom: 15px;
   padding: 20px;
@@ -17,46 +17,36 @@ export const Input = styled.TextInput.attrs({
 `;
 export const ButtonLogin = styled.TouchableOpacity`
   position: absolute;
-  width: 308px;
   height: 53px;
-  flex-direction: row;
-  max-height: 100px;
-  left: 65px;
+
   border-radius: 8;
   align-items: center;
   justify-content: center;
   background-color: #723d2b;
-  top: 230px;
+  top: 220px;
 `;
 
 export const ButtonGmail = styled.TouchableOpacity`
-  width: 308px;
   height: 53px;
-  flex-direction: row;
-  position: relative;
-  max-height: 100px;
-  left: 65px;
+  position: absolute;
+  left: 0px;
   border-radius: 8;
   align-items: center;
   justify-content: center;
   background-color: #723d2b;
-  top: 80px;
+  top: 300px;
 `;
 export const ButonRegister = styled.TouchableOpacity`
   width: 308px;
   height: 53px;
-  flex-direction: row;
-  position: relative;
-  max-height: 100px;
-  left: 65px;
+  position: absolute;
+  left: 0px;
   border-radius: 8;
   align-items: center;
   justify-content: center;
   background-color: #723d2b;
-  top: 95px;
+  top: 380px;
 `;
-
-
 
 export const ButtonText = styled.Text`
   font-size: 20px;
@@ -64,8 +54,9 @@ export const ButtonText = styled.Text`
   font-style: italic;
 `;
 export const TextFooter = styled.Text`
+position: relative;
   font-size: 20px;
-  top:300px;
+  top:240px;
   text-align:center;
   color: ${(props) => props.color};
   font-style: italic;
