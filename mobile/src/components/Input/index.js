@@ -106,7 +106,7 @@ export default function Inputs() {
 
       <ButtonLogin
         style={{ width: widthPercentageToDP("93%") }}
-        onPress={() => acessoHome()}
+        onPress={() => irTeste()}
       >
         <ButtonText color="#fff">Logar</ButtonText>
       </ButtonLogin>
