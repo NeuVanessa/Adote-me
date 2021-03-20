@@ -8,12 +8,8 @@ export const Container = styled.View`
 
 //1
 export const ContainerHeader = styled.View`
-
-
-flex:1;
 position:relative;
-background-color:red;
-
+flex: 1;
 `
 //2
 export const ContainerMain = styled.View`

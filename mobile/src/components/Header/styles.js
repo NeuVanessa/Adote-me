@@ -11,6 +11,7 @@ export const Container = styled.View`
   width: ${widthPercentageToDP("180%")};
   height: ${heightPercentageToDP("10%")};
   background: ${colors.primary};
+  top:20px;
 `;
 
 export const ButtonMenu = styled.View`
@@ -22,7 +23,7 @@ export const ButtonMenu = styled.View`
 
 export const ButonLog = styled.View`
 position:absolute;
-  margin-left: 400px;
+  margin-left: 380px;
   top:15px;
-  left:-75;
+ 
 `;

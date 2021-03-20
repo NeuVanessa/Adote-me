@@ -74,10 +74,10 @@ export default function Header() {
     <Container sbehavior={Platform.OS === "ios" ? "padding" : ""} enabled  style={{ width: widthPercentageToDP("150%"),height: heightPercentageToDP("7%") }}>
       <ButtonMenu onPress={() => signOut()}>
         <Icon
-          style={{ left: 12, top:10,position:'absolute' }}
+          style={{ left: 12, top:5,position:'absolute' }}
           name="reorder-three-outline"
           color="white"
-          size={30}
+          size={40}
         />
       </ButtonMenu>
       <ButonLog onPress={{}}>
