@@ -4,8 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 //Aqui é importado todas as rotas de navegação necessária, nesse código apenas chamei uma tela
 import Login from "../pages/Login/index";
-import Home from "../pages/Home/index";
-import HomeTeste from "../pages/HomeTeste/index.js";
+import Home from "../pages/Home/index.js";
 const Stack = createStackNavigator();
 
 //serve para ocultar o header que aparece automático quando cria uma rota
@@ -24,11 +23,7 @@ export default function App() {
           name="Home"
           component={Home}
         />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="HomeTeste"
-          component={HomeTeste}
-        />
+      
       </Stack.Navigator>
     </NavigationContainer>
   );

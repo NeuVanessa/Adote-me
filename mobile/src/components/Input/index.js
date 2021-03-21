@@ -81,7 +81,7 @@ export default function Inputs() {
   };
 
   const irTeste = () => {
-    navigation.navigate("HomeTeste");
+    navigation.navigate("Outher");
   };
 
   return (
@@ -106,12 +106,12 @@ export default function Inputs() {
 
       <ButtonLogin
         style={{ width: widthPercentageToDP("93%") }}
-        onPress={() => irTeste()}
+        onPress={() => acessoHome()}
       >
         <ButtonText color="#fff">Logar</ButtonText>
       </ButtonLogin>
       <ButtonGmail style={{ width: widthPercentageToDP("93%") }}>
-        <ButtonText onPress={() => irTeste()} color="#fff">
+        <ButtonText onPress={() =>acessoHome() } color="#fff">
           Continue with Google
         </ButtonText>
       </ButtonGmail>
