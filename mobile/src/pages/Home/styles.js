@@ -9,7 +9,7 @@ flex:1;
 export const ContainerBody = styled.View`
 position:relative;
 flex-grow:10;
-background-color:yellow;
+background-color:#E2C2B7;
 
 `
 
@@ -17,8 +17,8 @@ background-color:yellow;
 //2
 export const ContainerMain = styled.View`
 
-flex-grow:15;
-background-color:blue;
+flex-grow:20;
+
 
 `
 //3
@@ -33,3 +33,9 @@ flex-grow:2;
 background-color:red;
 
 `
+export const CreateRecent = styled.View`
+
+
+`
+
+
