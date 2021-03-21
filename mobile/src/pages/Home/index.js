@@ -3,20 +3,18 @@ import {Container,ContainerBody,ContainerMain,ConitanerRecent,ContainerButton} f
 import Header from '../../components/Header';
 import {Text}from 'react-native';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+
+import CreateRecent from "./CreateRecent";
 export default function Home() {
     
     return (
 <Container>
 <Header/>
 <ContainerBody>
-    
+<Text style={{left:16,fontSize:15,top:10,color:"#fff"}}>Adicionados Recentimente</Text>
 <ContainerMain>
 
-<Text>
-ESSE CONTAINER É PARA TRABALHAR COM OS ADICIONADOS RECENTIMENTE
-
-</Text>
-
+<CreateRecent/>
 </ContainerMain>
 
 <ConitanerRecent>
