@@ -14,10 +14,16 @@ export default function HomeTeste() {
 
 <ContainerMain>
 
+<Text>
+ESSE CONTAINER É PARA TRABALHAR COM OS ADICIONADOS RECENTIMENTE
+
+</Text>
 
 </ContainerMain>
 <ConitanerRecent>
-
+<Text>
+ESSE CONTAINER É PARA TRABALHAR COM as OUTRAS POSTAGENS 
+</Text>
 
 </ConitanerRecent>
 
