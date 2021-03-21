@@ -15,7 +15,8 @@ background: ${colors.primary};
 export const ContainerOut = styled.View`
 flex:1;
 flex-grow:10px;
-background-color:red;
+top:5px;
+
 
 `;
 
@@ -23,6 +24,8 @@ background-color:red;
 export const ContainerPes = styled.View`
 flex:1;
 flex-grow:30px;
-background-color:black;
+left:175px;
+top:5px;
+
 
 `;

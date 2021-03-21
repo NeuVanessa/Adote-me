@@ -67,7 +67,7 @@ export {
 export default function Header() {
   return (
     <Container sbehavior={Platform.OS === "ios" ? "padding" : ""} enabled  style={{ width: widthPercentageToDP("100%"),height: heightPercentageToDP("150%")}}>
-      {/* <ContainerOut>
+      <ContainerOut>
         <Icon
 
           style={{ left: 20, top:15, position: "absolute" }}
@@ -87,7 +87,7 @@ export default function Header() {
           name="search-outline"
           size={18}
         />
-      </ContainerPes> */}
+      </ContainerPes>
 
 
 

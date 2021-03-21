@@ -27,3 +27,9 @@ flex-grow:30;
 background-color:black;
 
 `
+
+export const ContainerButton = styled.View`
+flex-grow:2;
+background-color:red;
+
+`
