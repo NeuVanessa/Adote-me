@@ -16,18 +16,20 @@ export const Card = styled.View`
   height: 150px;
 `;
 
+
+
 export const Img = styled.Image`
-width:40px;
-height:30px;
+width:180px;
+height:180px;
 
 
 
-background-color:blue;
+
 
 `;
 
 export const CardText = styled.View`
   flex: 1;
-  margin-top: 150px;
+  margin-top: 0px;
   margin-left: 8px;
 `;
