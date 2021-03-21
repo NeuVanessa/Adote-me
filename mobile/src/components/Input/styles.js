@@ -2,13 +2,12 @@ import styled from "styled-components/native";
 
 export const SimpleInput = styled.View`
   padding-top: 30;
-  left:0px;
+  left: 0px;
 `;
 
 export const Input = styled.TextInput.attrs({
   placeholderTextColor: "rgba(255,0,0)",
 })`
-  
   font-size: 17px;
   margin-bottom: 15px;
   padding: 20px;
@@ -55,10 +54,9 @@ export const ButtonText = styled.Text`
   font-style: italic;
 `;
 export const TextFooter = styled.Text`
-
   font-size: 10px;
-  top:240px;
-  text-align:center;
+  top: 240px;
+  text-align: center;
   color: ${(props) => props.color};
   font-style: italic;
 `;

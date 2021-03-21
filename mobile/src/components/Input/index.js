@@ -111,7 +111,7 @@ export default function Inputs() {
         <ButtonText color="#fff">Logar</ButtonText>
       </ButtonLogin>
       <ButtonGmail style={{ width: widthPercentageToDP("93%") }}>
-        <ButtonText onPress={() =>acessoHome() } color="#fff">
+        <ButtonText onPress={() => acessoHome()} color="#fff">
           Continue with Google
         </ButtonText>
       </ButtonGmail>

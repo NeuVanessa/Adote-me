@@ -23,7 +23,6 @@ export default function App() {
           name="Home"
           component={Home}
         />
-      
       </Stack.Navigator>
     </NavigationContainer>
   );
