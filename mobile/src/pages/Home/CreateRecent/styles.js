@@ -14,22 +14,14 @@ export const Card = styled.View`
   margin-left: 12px;
   width: 200px;
   height: 150px;
+ 
+  
 `;
 
-
-
-export const Img = styled.Image`
-width:180px;
-height:180px;
-
-
-
-
-
-`;
 
 export const CardText = styled.View`
   flex: 1;
   margin-top: 0px;
   margin-left: 8px;
+  color:#723D2B;
 `;
