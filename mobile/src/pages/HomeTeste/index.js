@@ -7,9 +7,8 @@ export default function HomeTeste() {
     
     return (
 <Container>
-
-<ContainerHeader  style={{    height: wp('150%') }} >
 <Header/>
+<ContainerHeader  style={{    height: wp('150%') }} >
 </ContainerHeader>
 
 <ContainerMain>

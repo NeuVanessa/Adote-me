@@ -1,7 +1,8 @@
 import styled from "styled-components/native";
 
 export const SimpleInput = styled.View`
-  padding-top: 45;
+  padding-top: 30;
+  left:0px;
 `;
 
 export const Input = styled.TextInput.attrs({
@@ -54,8 +55,8 @@ export const ButtonText = styled.Text`
   font-style: italic;
 `;
 export const TextFooter = styled.Text`
-position: relative;
-  font-size: 20px;
+
+  font-size: 10px;
   top:240px;
   text-align:center;
   color: ${(props) => props.color};

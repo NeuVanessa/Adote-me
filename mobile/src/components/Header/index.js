@@ -7,12 +7,16 @@ export default function Header() {
     <Container sbehavior={Platform.OS === "ios" ? "padding" : ""} enabled>
       <ContainerOut>
         <Icon
+
           style={{ left: 20, top:15, position: "absolute" }}
+
+          style={{ left: 12, top:5,position:'absolute' }}
+
           name="reorder-three-outline"
           color="white"
-          size={30}
+          size={40}
         />
-        
+
       </ContainerOut>
 
       <ContainerPes>
