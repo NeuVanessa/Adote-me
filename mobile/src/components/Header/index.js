@@ -6,7 +6,8 @@ import {
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 
-import { Dimensions, PixelRatio, Platform } from "react-native";
+import { Dimensions, PixelRatio, Platform,View,TextInput,Image, Keyboard } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 // Retrieve initial screen's width
 let screenWidth = Dimensions.get("window").width;
@@ -62,8 +63,8 @@ export {
 export default function Header() {
   return (
     <Container
-      sbehavior={Platform.OS === "ios" ? "padding" : ""}
-      enabled
+    sbehavior={Platform.OS === "ios" ? "padding" : ""} enabled
+   
       style={{
         width: widthPercentageToDP("100%"),
         height: heightPercentageToDP("150%"),
@@ -78,14 +79,24 @@ export default function Header() {
           size={40}
         />
       </ContainerOut>
-
-      <ContainerPes>
-        <Icon
-          style={{ left: 200, top: 20, position: "absolute" }}
-          name="search-outline"
-          size={18}
+      {/*  CODIGO DO PESQUISAR ALGO DESABILITADO|COMENTADO ESSE CÓDIGO SERÁ MEXIDO EM ALGUMA ISSUE ABERTA| 
+    
+      {/* <ContainerPes >
+        <TextInput style={{borderColor:"red",width:250,left:20,height:40,backgroundColor:"#999",top:20,borderRadius:8}}
+         placeholderTextColor="#fff"
+          placeholder="  Pesquisar por ..."
+          keyboardShouldPersistTaps
+        
         />
-      </ContainerPes>
+       <Icon
+          style={{ left: 269, top: 25, position: "absolute",backgroundColor:"#fff",borderRadius:8}}
+          name="search-outline"
+          size={25}
+          
+        />
+      </ContainerPes> */}
     </Container>
   );
 }
+
+//style={{ left: 100, top: 20, position: "absolute" }}

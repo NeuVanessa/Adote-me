@@ -1,19 +1,22 @@
 import styled from "styled-components/native";
 
 export const SimpleInput = styled.View`
-  padding-top: 30;
-  left: 0px;
+  padding-top: 40;
+  left: 20px;
 `;
 
 export const Input = styled.TextInput.attrs({
-  placeholderTextColor: "rgba(255,0,0)",
+  placeholderTextColor: "#fff",
+  
 })`
   font-size: 17px;
   margin-bottom: 15px;
   padding: 20px;
   border-radius: 10px;
-  border: black;
+  border: #723D2B;
   position: relative;
+ 
+
 `;
 export const ButtonLogin = styled.TouchableOpacity`
   position: absolute;
@@ -24,6 +27,7 @@ export const ButtonLogin = styled.TouchableOpacity`
   justify-content: center;
   background-color: #723d2b;
   top: 220px;
+
 `;
 
 export const ButtonGmail = styled.TouchableOpacity`
@@ -44,19 +48,21 @@ export const ButonRegister = styled.TouchableOpacity`
   border-radius: 8;
   align-items: center;
   justify-content: center;
-  background-color: #723d2b;
-  top: 380px;
+  background-color: transparent;
+  top: 350px;
 `;
 
 export const ButtonText = styled.Text`
   font-size: 20px;
   color: ${(props) => props.color};
-  font-style: italic;
+  font-family:monospace;
 `;
 export const TextFooter = styled.Text`
   font-size: 10px;
   top: 240px;
   text-align: center;
   color: ${(props) => props.color};
-  font-style: italic;
+  font-family:monospace;
+
 `;
+
