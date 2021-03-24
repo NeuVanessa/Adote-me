@@ -8,7 +8,7 @@ flex:1;
 //1
 export const ContainerBody = styled.View`
 position:relative;
-flex-grow:10;
+flex-grow:8;
 background-color:#E2C2B7;
 
 `

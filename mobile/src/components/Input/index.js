@@ -10,6 +10,8 @@ import {
   TextFooter,
 } from "./styles";
 import { useNavigation } from "@react-navigation/native";
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+
 //import Icon from "react-native-vector-icons/FontAwesome";
 import { Platform, Dimensions, PixelRatio } from "react-native";
 import {
@@ -76,9 +78,9 @@ export default function Inputs() {
   return (
     <SimpleInput sbehavior={Platform.OS === "ios" ? "padding" : ""} enabled>
       <Input
+        placeholder="Usuário"
         style={{ width: widthPercentageToDP("93%") }}
         underlineColorAndroid="transparent"
-        placeholder="Username"
         placeholderTextColor="#723D2B"
         autoCapitalize="none"
         onChangText={(Value) => setUsername(Value)}
@@ -87,7 +89,7 @@ export default function Inputs() {
       <Input
         style={{ width: widthPercentageToDP("93%") }}
         underlineColorAndroid="transparent"
-        placeholder="Password"
+        placeholder="Senha"
         placeholderTextColor="#723D2B"
         autoCapitalize="none"
         onChangText={(Value) => setPassord(Value)}
@@ -97,11 +99,17 @@ export default function Inputs() {
         style={{ width: widthPercentageToDP("93%") }}
         onPress={() => acessoHome()}
       >
-        <ButtonText color="#fff">Logar</ButtonText>
+        <ButtonText color="#fff">Entrar</ButtonText>
       </ButtonLogin>
       <ButtonGmail style={{ width: widthPercentageToDP("93%") }}>
+        <Icon
+          name="google-plus"
+          size={40}
+          color="#FFF"
+          style={{ position: "absolute", left: 30 }}
+        />
         <ButtonText onPress={() => acessoHome()} color="#fff">
-          Continue with Google
+          Continue com Google
         </ButtonText>
       </ButtonGmail>
       <ButonRegister style={{ width: widthPercentageToDP("93%") }}>
