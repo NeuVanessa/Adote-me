@@ -79,18 +79,9 @@ export default function Header() {
           size={40}
         />
       </ContainerOut>
-      {/* 
-      <ContainerPes>
-        
-        <Icon
-          style={{ left: 200, top: 20, position: "absolute" }}
-          name="search-outline"
-          size={18}
-          
-        />
-      </ContainerPes> */}
-
-      <ContainerPes >
+      {/*  CODIGO DO PESQUISAR ALGO DESABILITADO|COMENTADO ESSE CÓDIGO SERÁ MEXIDO EM ALGUMA ISSUE ABERTA| 
+    
+      {/* <ContainerPes >
         <TextInput style={{borderColor:"red",width:250,left:20,height:40,backgroundColor:"#999",top:20,borderRadius:8}}
          placeholderTextColor="#fff"
           placeholder="  Pesquisar por ..."
@@ -103,7 +94,7 @@ export default function Header() {
           size={25}
           
         />
-      </ContainerPes>
+      </ContainerPes> */}
     </Container>
   );
 }
