@@ -18,11 +18,6 @@ import {
 } from "react-native-responsive-screen";
 export default function Inputs() {
   const navigation = useNavigation();
-
-  //trecho de código abaixo é responsavel para fazer login, quando tiver que pegar os dados do back
-  //  const [username, setUsername] = useState("vanessa")
-  // const [Password, setPassord] = useState("123")
-
   // Retrieve initial screen's width
   let screenWidth = Dimensions.get("window").width;
 
@@ -66,12 +61,6 @@ export default function Inputs() {
     });
   };
 
-  /**
-   * Wrapper function that removes orientation change listener and should be invoked in
-   * componentWillUnmount lifecycle method of every class component (UI screen) that
-   * listenOrientationChange function has been invoked. This should be done in order to
-   * avoid adding new listeners every time the same component is re-mounted.
-   */
   const removeOrientationListener = () => {
     Dimensions.removeEventListener("change", () => {});
   };

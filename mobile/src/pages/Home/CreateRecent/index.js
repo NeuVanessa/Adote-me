@@ -5,19 +5,22 @@ import { Container, Card, Img, CardText, ContainerImg } from "./styles";
 export default function CreateRecent() {
   const array = [
     {
+      id:1,
       name: "Maicon",
       idade: "1 Mês",
       raça: "Pitbull",
       uri: "https://zipanuncios.com.br/img/2545938/1559956501225861.jpeg",
     },
     {
+      id:2,
       name: "Julio",
       idade: "5 Anos",
       raça: "SRD",
       uri:
         "https://www.matilhabrasil.com/wp-content/uploads/2019/08/CAPA-PORQUE-VIRA-LATA-10-MOTIVOS-PARA-TER-UM-EM-SUA-VIDA.jpg",
     },
-    {
+    { 
+      id:3,
       name: "Tadeu",
       idade: "3 Anos",
       raça: "SRD",
@@ -31,7 +34,7 @@ export default function CreateRecent() {
         <ScrollView horizontal={true}>
           {array.map((card) => {
             return (
-              <Card>
+              <Card key={card.id}>
                 <Image
                   style={{ width: 180, height: 180, backgroundColor: "red" }}
                   source={{
