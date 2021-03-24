@@ -6,6 +6,8 @@ O principal objetivo do adote-me e ajudar pessoas a encontrar seu novo amigo ou 
 
 `$QUER FAZER PARTE DO PROJETO?`
 
+Faça o FORK
+
 clone o projeto
 ` git clone `
 
