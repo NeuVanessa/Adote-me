@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigation } from '@react-navigation/native';
 import { Container, ContainerOut, ContainerPes } from "./styles";
 import Icon from "react-native-vector-icons/Ionicons";
 import {
@@ -66,7 +67,11 @@ export {
   removeOrientationListener,
 };
 
+
 export default function Header() {
+ 
+  const navigation = useNavigation();
+
   return (
     <Container
       sbehavior={Platform.OS === "ios" ? "padding" : ""}

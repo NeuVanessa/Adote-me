@@ -11,7 +11,7 @@ export const Container = styled.View`
   background: ${colors.primary};
 `;
 
-export const ContainerOut = styled.View`
+export const ContainerOut = styled.TouchableOpacity`
   flex: 1;
   flex-grow: 10px;
   top: 5px;
