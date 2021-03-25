@@ -8,28 +8,27 @@ import CreateRecent from "./CreateRecent";
 export default function Home() {
     
     return (
-<Container>
-<Header/>
-<ContainerBody>
-<Text style={{left:16,fontSize:15,top:10,color:"#fff"}}>Adicionados Recentimente</Text>
-<ContainerMain>
+        <Container>
 
-<CreateRecent/>
-</ContainerMain>
+            <Header search />
 
-<ConitanerRecent>
-<Text style={{color:"#fff"}}>
-ESSE CONTAINER É PARA TRABALHAR COM as OUTRAS POSTAGENS 
-</Text>
+            <ContainerBody>
+                <Text style={{left:16,fontSize:15,top:10,color:"#fff"}}>Adicionados Recentimente</Text>
+                <ContainerMain>
+                    <CreateRecent />
+                </ContainerMain>
 
-</ConitanerRecent>
+            <ConitanerRecent>
+                <Text style={{color:"#fff"}}>
+                ESSE CONTAINER É PARA TRABALHAR COM as OUTRAS POSTAGENS 
+                </Text>
 
-<ContainerButton>
+            </ConitanerRecent>
 
-    <Text> ESTE CONTAINER É PARA TRABALHAR COM O BOTÃO CRIAR ANUNCIO! Xd</Text>
-</ContainerButton>
-</ContainerBody>
-</Container>
-
+            <ContainerButton>
+                <Text> ESTE CONTAINER É PARA TRABALHAR COM O BOTÃO CRIAR ANUNCIO! Xd</Text>
+            </ContainerButton>
+            </ContainerBody>
+        </Container>
     );
 }
