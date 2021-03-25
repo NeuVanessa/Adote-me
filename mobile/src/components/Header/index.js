@@ -1,12 +1,12 @@
 import React from "react";
-import { Container, ContainerOut, ContainerPes } from "./styles";
+import { Container, ContainerOut, ContainerPes, TitleText, InputSearch } from "./styles";
 import Icon from "react-native-vector-icons/Ionicons";
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 
-import { Dimensions, PixelRatio, Platform,View,TextInput,Image, Keyboard } from "react-native";
+import { Dimensions, PixelRatio, Platform, Text,TextInput,Image, Keyboard } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
 // Retrieve initial screen's width
@@ -60,41 +60,46 @@ export {
   removeOrientationListener,
 };
 
-export default function Header() {
+export default function Header({ title, search }) {
+  
   return (
     <Container
     sbehavior={Platform.OS === "ios" ? "padding" : ""} enabled
-   
-      style={{
-        width: widthPercentageToDP("100%"),
-        height: heightPercentageToDP("150%"),
-      }}
+      // retirado porque ocupa a tela toda, ai limitei a altura no styles.js
+      // style={{
+      //   width: widthPercentageToDP("100%"),
+      //   height: heightPercentageToDP("150%"),
+      // }} 
     >
       <ContainerOut>
         <Icon
-          style={{ left: 20, top: 15, position: "absolute" }}
-          style={{ left: 12, top: 5, position: "absolute" }}
+          // style={{ position: 'absolute', left: 10 }}
           name="reorder-three-outline"
           color="white"
           size={40}
         />
       </ContainerOut>
-      {/*  CODIGO DO PESQUISAR ALGO DESABILITADO|COMENTADO ESSE CÓDIGO SERÁ MEXIDO EM ALGUMA ISSUE ABERTA| 
+       {/* CODIGO DO PESQUISAR ALGO DESABILITADO|COMENTADO ESSE CÓDIGO SERÁ MEXIDO EM ALGUMA ISSUE ABERTA|  */}
+
+       {title && (
+         <TitleText>{title}</TitleText>
+       )}
+
+       {search && (
+         <ContainerPes >
+            <InputSearch
+              placeholderTextColor="#fff"
+              placeholder="Pesquisar por ..."
+              keyboardShouldPersistTaps
+            />
+            <Icon
+              style={{ right: 0, top: 0, position: "absolute",backgroundColor:"#fff",borderRadius:8}}
+              name="search-outline"
+              size={30}
+            />
+          </ContainerPes>
+       )}
     
-      {/* <ContainerPes >
-        <TextInput style={{borderColor:"red",width:250,left:20,height:40,backgroundColor:"#999",top:20,borderRadius:8}}
-         placeholderTextColor="#fff"
-          placeholder="  Pesquisar por ..."
-          keyboardShouldPersistTaps
-        
-        />
-       <Icon
-          style={{ left: 269, top: 25, position: "absolute",backgroundColor:"#fff",borderRadius:8}}
-          name="search-outline"
-          size={25}
-          
-        />
-      </ContainerPes> */}
     </Container>
   );
 }

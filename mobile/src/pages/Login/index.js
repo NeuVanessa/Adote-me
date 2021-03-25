@@ -17,9 +17,9 @@ export default function Login() {
       <Text style={{fontSize:20,position:"absolute",left:360,bottom:40,fontFamily: 'monospace',color:"#fff"}}>Adote-me</Text>
       </SectionInput>
 
-<SectionInputs>
-<Inputs />
-</SectionInputs>
+      <SectionInputs>
+        <Inputs />
+      </SectionInputs>
       
     </Container>
   );
