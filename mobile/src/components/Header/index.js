@@ -6,8 +6,8 @@ import {
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 
-import { Dimensions, PixelRatio, Platform, Text,TextInput,Image, Keyboard } from "react-native";
-import { TouchableOpacity } from "react-native-gesture-handler";
+import { Dimensions, PixelRatio, Platform, } from "react-native";
+
 
 // Retrieve initial screen's width
 let screenWidth = Dimensions.get("window").width;
@@ -84,6 +84,8 @@ export default function Header({ title, search }) {
               placeholderTextColor="#fff"
               placeholder="Pesquisar por ..."
               keyboardShouldPersistTaps
+              
+              
             />
             <Icon
               style={{ right: 0, top: 0, position: "absolute",backgroundColor:"#fff",borderRadius:8}}

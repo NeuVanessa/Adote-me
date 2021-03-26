@@ -41,7 +41,8 @@ export const InputSearch = styled.TextInput`
   padding-left: 15px;
   border-radius: 8px;
   color: #fff;
-  font-size: 20px;
+  font-size:12px;
+  font-family:monospace;
 `;
 
 export const Input = styled.TouchableOpacity`

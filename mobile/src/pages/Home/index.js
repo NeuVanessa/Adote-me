@@ -23,7 +23,15 @@ export default function Home() {
       <Header search />
 
       <ContainerBody>
-        <Text style={{ left: 16, fontSize: 15, top: 10, color: "#fff" }}>
+        <Text
+          style={{
+            left: 16,
+            fontSize: 15,
+            top: 10,
+            color: "#fff",
+            fontFamily: "monospace",
+          }}
+        >
           Adicionados Recentimente
         </Text>
         <ContainerMain>
@@ -39,9 +47,11 @@ export default function Home() {
         <ContainerButton>
           <SubmitButton>
             <PlusIcon>
-              <Text style={{ fontSize: 25, color: "#723D2B",bottom:2 }}>+</Text>
+              <Text style={{ fontSize: 25, color: "#723D2B", bottom: 2 }}>
+                +
+              </Text>
             </PlusIcon>
-            <TextSimple style={{ fontSize: 13, color: "#723D2B",left:10 }}>
+            <TextSimple style={{ fontSize: 13, color: "#723D2B", left: 10 }}>
               Criar anúncio
             </TextSimple>
           </SubmitButton>
