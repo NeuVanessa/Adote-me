@@ -21,6 +21,14 @@ export default function CreateRecent() {
     },
     {
       id: 3,
+      name: "Julio",
+      idade: "5 Anos",
+      raça: "SRD",
+      uri:
+        "https://www.matilhabrasil.com/wp-content/uploads/2019/08/CAPA-PORQUE-VIRA-LATA-10-MOTIVOS-PARA-TER-UM-EM-SUA-VIDA.jpg",
+    },
+    {
+      id: 3,
       name: "Tadeu",
       idade: "3 Anos",
       raça: "SRD",
@@ -43,13 +51,13 @@ export default function CreateRecent() {
                 />
 
                 <CardText>
-                  <Text style={{ color: "#723D2B", fontFamily: "monospace" }}>
+                  <Text style={{ color: "#723D2B", fontFamily: "monospace",fontSize:10}}>
                     {card.name}{" "}
                   </Text>
-                  <Text style={{ color: "#723D2B", fontFamily: "monospace" }}>
+                  <Text style={{ color: "#723D2B", fontFamily: "monospace",fontSize:10}}>
                     {card.idade}{" "}
                   </Text>
-                  <Text style={{ color: "#723D2B", fontFamily: "monospace" }}>
+                  <Text style={{ color: "#723D2B", fontFamily: "monospace",fontSize:10 }}>
                     {card.raça}{" "}
                   </Text>
                 </CardText>

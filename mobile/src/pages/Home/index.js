@@ -3,7 +3,7 @@ import {
   Container,
   ContainerBody,
   ContainerMain,
-  ConitanerRecent,
+  ConitanerPosts,
   ContainerButton,
   SubmitButton,
   PlusIcon,
@@ -11,12 +11,8 @@ import {
 } from "./styles";
 import Header from "../../components/Header";
 import { Text } from "react-native";
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp,
-} from "react-native-responsive-screen";
-
 import CreateRecent from "./CreateRecent";
+import CreatePosts from "./CreatePosts";
 export default function Home() {
   return (
     <Container>
@@ -38,11 +34,9 @@ export default function Home() {
           <CreateRecent />
         </ContainerMain>
 
-        <ConitanerRecent>
-          <Text style={{ color: "#fff" }}>
-            ESSE CONTAINER É PARA TRABALHAR COM as OUTRAS POSTAGENS
-          </Text>
-        </ConitanerRecent>
+        <ConitanerPosts>
+          <CreatePosts />
+        </ConitanerPosts>
 
         <ContainerButton>
           <SubmitButton>

@@ -17,15 +17,18 @@ export const ContainerMain = styled.View`
   flex-grow: 20;
 `;
 
-export const ConitanerRecent = styled.View`
+//Container Do poster
+export const ConitanerPosts = styled.View`
   flex-grow: 30;
-  background-color: black;
+
 `;
+
+
 
 export const ContainerButton = styled.View`
   flex-grow: 5;
   flex-direction: row;
-  background-color: ${colors.secudary};
+  background-color: ${colors.primary};
 `;
 
 export const SubmitButton = styled.TouchableOpacity`
@@ -58,4 +61,3 @@ export const PlusIcon = styled.View`
   justify-content: center;
 `;
 
-export const CreateRecent = styled.View``;
