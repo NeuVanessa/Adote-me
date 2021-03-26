@@ -5,10 +5,9 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 //Aqui é importado todas as rotas de navegação necessária, nesse código apenas chamei uma tela
 import Login from "../pages/Login";
 import Home from "../pages/Home";
-import Faqs from '../pages/Faqs';
+import Faqs from "../pages/Faqs";
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
-
 
 function DrawerNavs() {
   return (

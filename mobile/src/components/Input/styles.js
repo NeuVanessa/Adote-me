@@ -15,18 +15,19 @@ export const Input = styled.TextInput.attrs({
   border-radius: 10px;
   border: #723D2B;
   position: relative;
+  font-family:monospace;
  
 
 `;
 export const ButtonLogin = styled.TouchableOpacity`
   position: absolute;
   height: 53px;
-
   border-radius: 8;
   align-items: center;
   justify-content: center;
   background-color: #723d2b;
   top: 220px;
+  font-family:monospace;
 
 `;
 
@@ -39,6 +40,7 @@ export const ButtonGmail = styled.TouchableOpacity`
   justify-content: center;
   background-color: #723d2b;
   top: 300px;
+  font-family:monospace;
 `;
 export const ButonRegister = styled.TouchableOpacity`
   width: 308px;
@@ -50,6 +52,7 @@ export const ButonRegister = styled.TouchableOpacity`
   justify-content: center;
   background-color: transparent;
   top: 350px;
+  font-family:monospace;
 `;
 
 export const ButtonText = styled.Text`

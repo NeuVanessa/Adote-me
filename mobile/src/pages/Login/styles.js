@@ -19,7 +19,6 @@ export const SectionInput = styled.View`
   align-items: center;
 `;
 
-export const SectionInputs  = styled.View`
+export const SectionInputs = styled.View`
   flex-grow: 1.5px;
-
-`
+`;

@@ -6,8 +6,8 @@ import {
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 
-import { Dimensions, PixelRatio, Platform, Text,TextInput,Image, Keyboard } from "react-native";
-import { TouchableOpacity } from "react-native-gesture-handler";
+import { Dimensions, PixelRatio, Platform, } from "react-native";
+
 
 // Retrieve initial screen's width
 let screenWidth = Dimensions.get("window").width;
@@ -65,22 +65,15 @@ export default function Header({ title, search }) {
   return (
     <Container
     sbehavior={Platform.OS === "ios" ? "padding" : ""} enabled
-      // retirado porque ocupa a tela toda, ai limitei a altura no styles.js
-      // style={{
-      //   width: widthPercentageToDP("100%"),
-      //   height: heightPercentageToDP("150%"),
-      // }} 
     >
       <ContainerOut>
         <Icon
-          // style={{ position: 'absolute', left: 10 }}
+          
           name="reorder-three-outline"
           color="white"
           size={40}
         />
       </ContainerOut>
-       {/* CODIGO DO PESQUISAR ALGO DESABILITADO|COMENTADO ESSE CÓDIGO SERÁ MEXIDO EM ALGUMA ISSUE ABERTA|  */}
-
        {title && (
          <TitleText>{title}</TitleText>
        )}
@@ -91,6 +84,8 @@ export default function Header({ title, search }) {
               placeholderTextColor="#fff"
               placeholder="Pesquisar por ..."
               keyboardShouldPersistTaps
+              
+              
             />
             <Icon
               style={{ right: 0, top: 0, position: "absolute",backgroundColor:"#fff",borderRadius:8}}
@@ -103,5 +98,3 @@ export default function Header({ title, search }) {
     </Container>
   );
 }
-
-//style={{ left: 100, top: 20, position: "absolute" }}
