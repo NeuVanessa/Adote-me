@@ -24,7 +24,7 @@ export const TitleText = styled.Text`
   font-family: monospace;
 `;
 
-export const ContainerOut = styled.View`
+export const ContainerOut = styled.TouchableOpacity`
   position: absolute;
   left: 15px;
 `;

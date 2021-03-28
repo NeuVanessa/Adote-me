@@ -1,12 +1,6 @@
 import styled from "styled-components/native";
 import colors from "../../../utils/colors";
 export const Container = styled.View`
-  /* top: 20px;
-  flex: 1;
-  flex-direction: row;
-  background-color: ${colors.primary};
-  flex-grow:40px; */
-
   flex: 1;
   background-color:${colors.secudary};
   padding-top: 40;

@@ -1,13 +1,18 @@
 import React from "react";
-import { Container, ContainerOut, ContainerPes, TitleText, InputSearch } from "./styles";
+import {
+  Container,
+  ContainerOut,
+  ContainerPes,
+  TitleText,
+  InputSearch,
+} from "./styles";
 import Icon from "react-native-vector-icons/Ionicons";
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 
-import { Dimensions, PixelRatio, Platform, } from "react-native";
-
+import { Dimensions, PixelRatio, Platform, Text } from "react-native";
 
 // Retrieve initial screen's width
 let screenWidth = Dimensions.get("window").width;
@@ -60,41 +65,40 @@ export {
   removeOrientationListener,
 };
 
-export default function Header({ title, search }) {
-  
+export default function Header({ title, search, navigation }) {
   return (
     <Container
-    sbehavior={Platform.OS === "ios" ? "padding" : ""} enabled
+      onPress={() => navigation.toggleDrawer()}
+      sbehavior={Platform.OS === "ios" ? "padding" : ""}
+      enabled
     >
       <ContainerOut>
-        <Icon
-          
-          name="reorder-three-outline"
-          color="white"
-          size={40}
-        />
-      </ContainerOut>
-       {title && (
-         <TitleText>{title}</TitleText>
-       )}
+        {/* <Icon name="reorder-three-outline"  color="white" size={40} /> */}
 
-       {search && (
-         <ContainerPes >
-            <InputSearch
-              placeholderTextColor="#fff"
-              placeholder="Pesquisar por ..."
-              keyboardShouldPersistTaps
-              
-              
-            />
-            <Icon
-              style={{ right: 0, top: 0, position: "absolute",backgroundColor:"#fff",borderRadius:8}}
-              name="search-outline"
-              size={30}
-            />
-          </ContainerPes>
-       )}
-    
+        <Text>Ola Mundo</Text>
+      </ContainerOut>
+      {title && <TitleText>{title}</TitleText>}
+
+      {search && (
+        <ContainerPes>
+          <InputSearch
+            placeholderTextColor="#fff"
+            placeholder="Pesquisar por ..."
+            keyboardShouldPersistTaps
+          />
+          <Icon
+            style={{
+              right: 0,
+              top: 0,
+              position: "absolute",
+              backgroundColor: "#fff",
+              borderRadius: 8,
+            }}
+            name="search-outline"
+            size={30}
+          />
+        </ContainerPes>
+      )}
     </Container>
   );
 }

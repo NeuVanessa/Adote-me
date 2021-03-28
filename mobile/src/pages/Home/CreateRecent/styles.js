@@ -3,7 +3,7 @@ export const Container = styled.View`
   top: 20px;
   flex: 1;
   flex-direction: row;
-  background-color: #fff;
+  background-color: #EDEDED;
 `;
 
 export const Card = styled.View`
